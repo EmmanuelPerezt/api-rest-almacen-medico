@@ -2,6 +2,7 @@ import dotenv  from 'dotenv';
 import express from 'express';
 import medicamentoRoutes from './routes/medicamentoRoutes.js'
 
+
 dotenv.config();
 const port = process.env.PORT;
 

@@ -1,0 +1,11 @@
+# Ignorar archivos generados por Node.js
+node_modules/
+
+# Ignorar archivo de variables de entorno
+.env
+
+# Ignorar archivos de logs y backups
+*.log
+*.backup
+
+# Otros archivos o directorios que desees ignorar
