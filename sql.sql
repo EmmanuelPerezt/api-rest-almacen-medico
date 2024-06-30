@@ -39,3 +39,10 @@ insert into almacenes(nombre,direccion) values('almacen1','5 de mayo'),('almacen
 INSERT INTO medicamentos (nombre, descripcion, id_categoria) VALUES ('Amoxicilina', 'Antibiótico de amplio espectro', 1), ('Paracetamol', 'Analgésico y antipirético', 2);
 
 INSERT INTO medicamentos_almacenes (id_medicamento, id_almacen, cantidad) VALUES (1, 1, 100), (1, 2, 50), (2, 1, 200);
+
+
+
+SELECT medicamentos.nombre as nombre, almacenes.nombre as almacen, medicamentos_almacenes.cantidad
+FROM medicamentos_almacenes
+JOIN medicamentos ON medicamentos_almacenes.id_medicamento = medicamentos.id
+JOIN almacenes ON medicamentos_almacenes.id_almacen = almacenes.id;
